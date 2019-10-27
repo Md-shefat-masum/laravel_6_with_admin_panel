@@ -204,7 +204,8 @@
     <script src="{{asset('contents/admin')}}/js/datatables.min.js"></script>
     <script src="{{asset('contents/admin')}}/js/validation.js"></script>
     <script src="{{asset('contents/admin')}}/custom.js"></script>
-    <script src="{{asset('contents/admin')}}/js/ajax.js"></script>
+    {{-- <script src="{{asset('contents/admin')}}/js/ajax.js"></script> --}}
+    <script src="{{asset('contents/admin')}}/js/ajaxCrud.js"></script>
 
     <script>
         $(document).ready(function() {

@@ -33,4 +33,7 @@ class adminController extends Controller
     public function blank_all(Request $request){
         return view('admin.blank-pages.all-in-one');
     }
+    public function test(Request $request){
+        return view('admin.blank-pages.text');
+    }
 }

@@ -101,26 +101,28 @@
                                             <table id="table" class="table table-main table-bordered custom-table  mb-0">
                                                 <thead>
                                                     <tr>
-                                                        <th>title</th>
-                                                        <th>sub title</th>
-                                                        <th>status</th>
-                                                        <th>photo</th>
+                                                        <th>heading</th>
+                                                        <th>sub heading</th>
+                                                        <th>button name</th>
+                                                        <th>button url</th>
+                                                        <th>banner image</th>
                                                         <th>Manage</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($all as $item)
                                                         <tr id="del_row{{$item->id}}">
-                                                            <td class="{{$item->id}}" id="title{{$item->id}}">{{$item->title}}</td>
-                                                            <td class="{{$item->id}}" id="sub_title{{$item->id}}">{{$item->sub_title}}</td>
-                                                            <td class="{{$item->id}}" id="status{{$item->id}}">{{$item->status}}</td>
+                                                            <td class="{{$item->id}}" id="title{{$item->id}}">{{$item->heading}}</td>
+                                                            <td class="{{$item->id}}" id="sub_title{{$item->id}}">{{$item->subheading}}</td>
+                                                            <td class="{{$item->id}}" id="status{{$item->id}}">{{$item->button_name}}</td>
+                                                            <td class="{{$item->id}}" id="status{{$item->id}}">{{$item->button_url}}</td>
                                                             <td>
                                                                 @if ($item->image != '')
                                                                     <img class="table_image_40" style="width:40px" src="{{asset('').$item->image}}" alt=""/>
                                                                 @endif
                                                             </td>
                                                             <td>
-                                                                <a class="text-success ml-1 view-btn" data-action="{{route('ajax_index_view',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a>
+                                                                <a class="text-success ml-1 view-btn" data-action="{{route('view_banner',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a>
                                                                 <a class="text-warning ml-1 edit-btn" data-action="{{route('ajax_index_view',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".edit-modal" title="edit" href="#"><i class="ti ti-pencil-alt"></i></a>
                                                                 <a class="text-danger  delete-btn" title="delete" data-id="{{$item->id}}" data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a>
                                                             </td>
@@ -182,39 +184,51 @@
                                             </div>
                                             <div class="col-md-2"></div>
                                         </div>
-                                        <form class="form-horizontal" id="add_form" method="post" action="{{route('ajax_index_add')}}" enctype="multipart/form-data">
+                                        <form class="form-horizontal" id="add_form" method="post" action="{{route('add_banner')}}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="form-group row custom_form_group{{ $errors->has('title') ? ' has-error' : '' }}">
-                                                <label class="col-sm-3 control-label">title:<span class="req_star"></span></label>
+                                            <div class="form-group row custom_form_group{{ $errors->has('heading') ? ' has-error' : '' }}">
+                                                <label class="col-sm-3 control-label">heading:<span class="req_star"></span></label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" name="title" value="{{old('title')}}">
-                                                    @if ($errors->has('title'))
+                                                    <input type="text" class="form-control" name="heading" value="{{old('heading')}}">
+                                                    @if ($errors->has('heading'))
                                                         <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('title') }}</strong>
+                                                            <strong>{{ $errors->first('heading') }}</strong>
                                                         </span>
                                                     @endif
                                                 </div>
                                             </div>
 
-                                            <div class="form-group row custom_form_group{{ $errors->has('sub_title') ? ' has-error' : '' }}">
+                                            <div class="form-group row custom_form_group{{ $errors->has('subheading') ? ' has-error' : '' }}">
                                                 <label class="col-sm-3 control-label">Sub title:<span class="req_star"></span></label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" name="sub_title" value="{{old('sub_title')}}">
-                                                    @if ($errors->has('sub_title'))
+                                                    <input type="text" class="form-control" name="subheading" value="{{old('subheading')}}">
+                                                    @if ($errors->has('subheading'))
                                                         <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('sub_title') }}</strong>
+                                                            <strong>{{ $errors->first('subheading') }}</strong>
                                                         </span>
                                                     @endif
                                                 </div>
                                             </div>
 
-                                            <div class="form-group row custom_form_group{{ $errors->has('status') ? ' has-error' : '' }}">
-                                                <label class="col-sm-3 control-label">status:<span class="req_star"></span></label>
+                                            <div class="form-group row custom_form_group{{ $errors->has('button_name') ? ' has-error' : '' }}">
+                                                <label class="col-sm-3 control-label">button_name:<span class="req_star"></span></label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" name="status" value="{{old('status')}}">
-                                                    @if ($errors->has('status'))
+                                                    <input type="text" class="form-control" name="button_name" value="{{old('button_name')}}">
+                                                    @if ($errors->has('button_name'))
                                                         <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('status') }}</strong>
+                                                            <strong>{{ $errors->first('button_name') }}</strong>
+                                                        </span>
+                                                    @endif
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row custom_form_group{{ $errors->has('button_url') ? ' has-error' : '' }}">
+                                                <label class="col-sm-3 control-label">button_url:<span class="req_star"></span></label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control" name="button_url" value="{{old('button_url')}}">
+                                                    @if ($errors->has('button_url'))
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $errors->first('button_url') }}</strong>
                                                         </span>
                                                     @endif
                                                 </div>
@@ -301,7 +315,7 @@
                                         <table class="table w-100 overflow-hidden table-striped table-bordered table-hover custom-table" id="view-result">
 
                                         </table>
-                                        <img src="" data-server="{{asset('')}}" id="banner-img" alt="">
+                                        <img src="" class="img-fluid" data-server="{{asset('')}}" id="banner-img" alt="">
                                     </div>
                                     <div class="card-footer card_footer_button text-center">
                                         <button type="submit" class="btn d-none custom-btn btn-outline-danger waves-effect">Delete</a>

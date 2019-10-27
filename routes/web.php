@@ -59,6 +59,7 @@ Route::group(['namespace' => 'admin','middleware' => 'auth'],function () {
     // banner routes
     Route::get('/admin/banner', 'bannerController@index')->name('banner');
     Route::post('/admin/banner', 'bannerController@add')->name('add_banner');
+    Route::get('/admin/banner/view/{id}', 'bannerController@view')->name('view_banner');
 });
 
 
@@ -67,6 +68,7 @@ Route::get('/admin/blank/index','adminController@blank_index')->name('blank_page
 Route::get('/admin/blank/add','adminController@blank_add')->name('blank_page_add')->middleware('auth');
 Route::get('/admin/blank/view','adminController@blank_view')->name('blank_page_view')->middleware('auth');
 Route::get('/admin/blank/all','adminController@blank_all')->name('blank_page_all_in_one')->middleware('auth');
+Route::get('/admin/blank/test','adminController@test')->name('blank_page_test')->middleware('auth');
 
 // Ajax Crud
 Route::get('/admin/ajax','AjaxController@index')->name('ajax_index')->middleware('auth');

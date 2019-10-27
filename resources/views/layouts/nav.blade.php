@@ -74,6 +74,7 @@
                 <li><a href="{{route('blank_page_add')}}">add</a></li>
                 <li><a href="{{route('blank_page_view')}}">view</a></li>
                 <li><a href="{{route('blank_page_all_in_one')}}">all in one</a></li>
+                <li><a href="{{route('blank_page_test')}}">ck editor</a></li>
             </ul>
         </li>
 
