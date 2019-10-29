@@ -116,7 +116,7 @@
                                                             <td class="{{$item->id}}" id="status{{$item->id}}">{{$item->status}}</td>
                                                             <td>
                                                                 @if ($item->image != '')
-                                                                    <img class="table_image_40" style="width:40px" src="{{asset('').$item->image}}" alt=""/>
+                                                                    <img class="table_image_40" style="height:40px" src="{{asset('').$item->image}}" alt=""/>
                                                                 @endif
                                                             </td>
                                                             <td>

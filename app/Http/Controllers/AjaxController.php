@@ -43,12 +43,12 @@ class AjaxController extends Controller
             ]);
         }
 
-        $banner= $this->view($request,$id);
-        return response()->json(array('sucess'=>true,'banner' => $banner));
+        // $this->view($id);
+        return response()->json(array('image'=>$path, 'id' => $id));
 
     }
 
-    public function view(Request $request,$id){
+    public function view($id){
         $banner = AjaxCrud::where('id',$id)->firstOrFail();
         return response()->json(array('sucess'=>true,'banner' => $banner));
     }

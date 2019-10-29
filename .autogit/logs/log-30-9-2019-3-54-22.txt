@@ -1,0 +1,35 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 30 2019 03:54:22 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AjaxController.php
+* public/contents/admin/js/ajaxCrud.js
+
+
+Created files:
+* .autogit/logs/log-30-9-2019-3-24-16.txt
+* public/uploads/ajaxCrud/image/6upgwDSu7BZUEH1VMHrlJDHiVTBKdyUqvaRZQtpR.jpeg
+* public/uploads/ajaxCrud/image/ARP7reE7TUqbcKFQcUYAKf1DGsOBNnKpdOOw92iS.jpeg
+* public/uploads/ajaxCrud/image/CVhA6krUnx6KHb7zye1Cs8PlhBCbAmpChqvmoSYl.jpeg
+* public/uploads/ajaxCrud/image/FbfGBTCXo99qs0DWKMlSCk1MvOdIyZmjVACmu93b.jpeg
+* public/uploads/ajaxCrud/image/JrplD1NVwGMHf7MEDLEfb2KuFIkOYRQsUVNklotj.jpeg
+* public/uploads/ajaxCrud/image/LYYJz4VNbtuzBI9lT7K9ZNrEAQlzxMSNYujaNVIf.jpeg
+* public/uploads/ajaxCrud/image/Lx5yshL6s40V4olSLSnVcTdFGrCkFQ6M8L7HiMxz.jpeg
+* public/uploads/ajaxCrud/image/N8KBdsqvpVD45N4Yz5j16lgfQR97WA4gdWOJbHFr.jpeg
+* public/uploads/ajaxCrud/image/OPR4k66zO3xY03iTh1Km3oa2U7nRGQuTcxPHN87U.jpeg
+* public/uploads/ajaxCrud/image/QNY7ddU3aEK7NAjGLsGTvd7YcAodjFwVkfCCqSHA.jpeg
+* public/uploads/ajaxCrud/image/aW4aOJnot484OY8gkLWbuxM3Zw0VKboBkaZ7A10Y.jpeg
+* public/uploads/ajaxCrud/image/duGQCV5Rj1uWPf9jol3u0aiI9BXbrxfMv8h1so3g.jpeg
+* public/uploads/ajaxCrud/image/dzQphpAkk3SEpee2XptLxXnjoYKSQ72B8Z93wy1R.jpeg
+* public/uploads/ajaxCrud/image/lClwFZxnj7V6VTC2ufJNFN7URu4OcVERj1Tde87t.jpeg
+* public/uploads/ajaxCrud/image/stlXDBy5UQOzqBbWuzbUTiwb2IY72QTpnB0IIq0K.jpeg
+* public/uploads/ajaxCrud/image/uCbIuonwJIW94Biu75I1ylWsYyJ2wqB5tdrymzYT.jpeg
+* public/uploads/ajaxCrud/image/xYXn2vrM4eWs9wcjGuGu7bB17YIwwDumbNam6QVE.jpeg
+* public/uploads/ajaxCrud/image/zdkOaFbe99qbjGKYAlERJr2o9GS7e5D0l6SJatuh.jpeg
+
+
+Deleted files:
+
+
+Renamed files:
