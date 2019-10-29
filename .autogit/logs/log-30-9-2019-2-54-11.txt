@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 30 2019 02:54:11 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* admin.zip
+* app/Http/Controllers/AjaxController.php
+* default_db_6.sql
+* public/contents/admin/js/ajaxCrud.js
+* resources/views/admin/ajax/ajax.blade.php
+
+
+Created files:
+* .autogit/autogit.json
+* public/uploads/ajaxCrud/image/JQNThaJ3fpXdCrDZSNP8uEB02QDJgcbgQUwtyAhz.jpeg
+* public/uploads/ajaxCrud/image/QNQqbTcVB6xfywi5IZ4DkAxgq09Pu1OydH8Io6WV.jpeg
+* public/uploads/ajaxCrud/image/i5Y0Qh7JRLHSBA0ZPxP8BqtDZIZJoWJft2AuHIf0.jpeg
+
+
+Deleted files:
+
+
+Renamed files:

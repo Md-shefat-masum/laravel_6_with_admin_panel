@@ -26,7 +26,7 @@ $(document).ready(function () {
             processData: false,
             success: function (data) {
                 console.log(data.banner);
-                $('#table tr:last').after('<tr> ' + makeTableTd(table_data) + managebtn(data.banner) + '</tr>');
+                $('#table tr:last').after('<tr id="del_row'+data.banner+'"> ' + makeTableTd(table_data) + managebtn(data.banner) + '</tr>');
                 $('#add_form').trigger('reset');
                 $('.modal').modal('hide');
                 s_alert();
@@ -45,7 +45,8 @@ $(document).ready(function () {
 
 function managebtn(id) {
     var url= $('.view-btn').data('server')+$('.view-btn').data('view_url')+id;
-    return '<td><a class="text-success ml-1 view-btn" data-method="GET" data-action="'+id+'" data-id="'+id+'" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a> <a class="text-warning ml-1" title="edit" data-method="GET" data-action="'+id+'" data-id="'+id+'"  data-toggle="modal" data-target=".edit-modal" href="#"><i class="ti ti-pencil-alt"></i></a> <a class="text-danger  delete-btn" title="delete"  data-id="'+id+'"  data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a> </td>';
+    console.log(url);
+    return '<td><a class="text-success ml-1 view-btn" data-method="GET" data-action="'+url+'" id="view_id'+id+'" data-id="'+id+'" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a> <a class="text-warning ml-1" title="edit" data-method="GET" data-action="'+url+'" data-id="'+id+'"  data-toggle="modal" data-target=".edit-modal" href="#"><i class="ti ti-pencil-alt"></i></a> <a class="text-danger  delete-btn" title="delete"  data-id="'+id+'"  data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a> </td>';
 }
 
 function makeTableTd(table_data) {
@@ -73,7 +74,32 @@ $(document).ready(function () {
         e.preventDefault();
         var formurl = $(this).data('action');
         var type = $(this).data('method');
+        console.log(formurl,type,'no');
+        $.ajax({
+            url: formurl,
+            type: type,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                console.log(data.banner);
+                $('#view-result tr').remove();
+                jQuery.each(data.banner, function (colname, coldata) {
+                    $('#view-result').append('<tr> <td style="width:35%">' + colname + '</td> <td style="width:4px;text-align:center">:</td> <td style="width:60%">' + coldata + '</td> </tr>')
+                });
 
+                var image_src = $('#banner-img').data('server') + data.banner.image;
+                $('#banner-img').attr('src', image_src);
+                console.log(image_src);
+            }
+        });
+    })
+
+    $('#view-btn').on('click', function (e) {
+        e.preventDefault();
+        var formurl = $(this).data('action');
+        var type = $(this).data('method');
+        console.log(formurl,type,'no');
         $.ajax({
             url: formurl,
             type: type,
