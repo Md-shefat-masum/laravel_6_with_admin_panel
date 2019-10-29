@@ -27,7 +27,7 @@ $(document).ready(function () {
             success: function (response) {
                 console.log(response.id);
                 console.log(response.image);
-                $('#table tr:last').after('<tr id="del_row163" "'+response.id+'"> ' + makeTableTd(table_data,response.image,response.id) +'</tr>');
+                $('#table tr:last').after('<tr id="del_row'+response.id+'"> ' + makeTableTd(table_data,response.image,response.id) +'</tr>');
                 $('#add_form').trigger('reset');
                 $('.modal').modal('hide');
                 s_alert();
@@ -54,7 +54,7 @@ function makeTableTd(table_data,image,id) {
     var td = '';
     var image_src = $('.view-btn').data('server')+'/'+image;
     var url= $('.view-btn').data('server')+$('.view-btn').data('view_url')+id;
-
+    url = String(url);
     for (var i = 0; i < table_data.length; i++) {
 
         if(i==table_data.length-1)
@@ -63,7 +63,7 @@ function makeTableTd(table_data,image,id) {
             td = td + '<td>' + table_data[i] + '</td>';
     }
 
-    td = td +  '<td><a class="text-success ml-1 view-btn" data-method="GET" data-action="'+url+'" id="view_id'+id+'" data-id="'+id+'" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a> <a class="text-warning ml-1" title="edit" data-method="GET" data-action="'+url+'" data-id="'+id+'"  data-toggle="modal" data-target=".edit-modal" href="#"><i class="ti ti-pencil-alt"></i></a> <a class="text-danger  delete-btn" title="delete"  data-id="'+id+'"  data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a> </td>';
+    td = td +  '<td><a class="text-success ml-1 view-btn" data-method="GET" data-action="'+url+'" id="view_id'+id+'" data-id="'+id+'" data-toggle="modal" data-target=".view-modal" title="view" href="'+url+'"><i class="ti ti-zoom-in"></i></a> <a class="text-warning ml-1" title="edit" data-method="GET" data-action="'+url+'" data-id="'+id+'"  data-toggle="modal" data-target=".edit-modal" href="#"><i class="ti ti-pencil-alt"></i></a> <a class="text-danger  delete-btn" title="delete"  data-id="'+id+'"  data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a> </td>';
 
     console.log(td);
     return td;
