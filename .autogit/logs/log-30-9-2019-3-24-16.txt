@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 30 2019 03:24:16 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/contents/admin/js/ajaxCrud.js
+
+
+Created files:
+* .autogit/logs/log-30-9-2019-2-54-11.txt
+* public/uploads/ajaxCrud/image/1DVKBBDF4gqorw1n7Ctah6qzXxAp6ByJU6xuapDx.jpeg
+* public/uploads/ajaxCrud/image/EemNGdZIlELtudnQ2BmgtmV2hVUDAz4KpLWg0A4C.jpeg
+* public/uploads/ajaxCrud/image/I2AZMJIJGy63ILsOSWiyJ1lsWyQGQdFKlw3O7tJw.jpeg
+* public/uploads/ajaxCrud/image/LhjCpIDFiX1pCpZcS5jzcqyEiJvgKXXR46QM9yqY.jpeg
+* public/uploads/ajaxCrud/image/b5qlc8bv0xN5b5CVXtiBquRycwGkFrmf0GcEww81.jpeg
+* public/uploads/ajaxCrud/image/dSTUgBh2Ghi7aDP8aJ10R4BJU9kJnIgcR7UXBwhM.jpeg
+* public/uploads/ajaxCrud/image/jfsPpFzeg5rPSICNbVGUJLVAFO1MBSx0I1kRwZAl.jpeg
+* public/uploads/ajaxCrud/image/l6qfmbVlq9cK8G8FYzbqdE3SdoBkJBXV82dyTn9p.jpeg
+* public/uploads/ajaxCrud/image/odDlIWN724wFWufaAm6OVDLehltrp8L4Iykcpp1F.jpeg
+
+
+Deleted files:
+
+
+Renamed files:

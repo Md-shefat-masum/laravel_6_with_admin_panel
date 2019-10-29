@@ -25,7 +25,7 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function (data) {
-                console.log(data.banner);
+                console.log(data.banner.image);
                 $('#table tr:last').after('<tr id="del_row'+data.banner+'"> ' + makeTableTd(table_data) + managebtn(data.banner) + '</tr>');
                 $('#add_form').trigger('reset');
                 $('.modal').modal('hide');
@@ -71,31 +71,6 @@ function s_alert() {
 
 $(document).ready(function () {
     $('.view-btn').on('click', function (e) {
-        e.preventDefault();
-        var formurl = $(this).data('action');
-        var type = $(this).data('method');
-        console.log(formurl,type,'no');
-        $.ajax({
-            url: formurl,
-            type: type,
-            cache: false,
-            contentType: false,
-            processData: false,
-            success: function (data) {
-                console.log(data.banner);
-                $('#view-result tr').remove();
-                jQuery.each(data.banner, function (colname, coldata) {
-                    $('#view-result').append('<tr> <td style="width:35%">' + colname + '</td> <td style="width:4px;text-align:center">:</td> <td style="width:60%">' + coldata + '</td> </tr>')
-                });
-
-                var image_src = $('#banner-img').data('server') + data.banner.image;
-                $('#banner-img').attr('src', image_src);
-                console.log(image_src);
-            }
-        });
-    })
-
-    $('#view-btn').on('click', function (e) {
         e.preventDefault();
         var formurl = $(this).data('action');
         var type = $(this).data('method');
