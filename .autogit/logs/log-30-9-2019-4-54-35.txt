@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 30 2019 04:54:35 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/contents/admin/js/ajaxCrud.js
+
+
+Created files:
+* public/uploads/ajaxCrud/image/G50BlKKAHP7evt1wIlxc7DWXB6num9jqlVSWwwSB.jpeg
+* public/uploads/ajaxCrud/image/dg5xv8fK89NHnxkxsPip584oBhayAYEAne0mL2t5.jpeg
+* public/uploads/ajaxCrud/image/iNk3docPZNWnf5Maow9RQsEQDS46Dypd4ehncHga.jpeg
+
+
+Deleted files:
+
+
+Renamed files:
