@@ -120,7 +120,7 @@
                                                                 @endif
                                                             </td>
                                                             <td>
-                                                                <a class="text-success ml-1 view-btn" data-action="{{route('ajax_index_view',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a>
+                                                                <a class="text-success ml-1 view-btn" data-server="{{url('')}}" data-view_url="/admin/ajax/view/" data-action="{{route('ajax_index_view',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a>
                                                                 <a class="text-warning ml-1 edit-btn" data-action="{{route('ajax_index_view',$item->id)}}" data-method="GET" data-id="{{$item->id}}" data-toggle="modal" data-target=".edit-modal" title="edit" href="#"><i class="ti ti-pencil-alt"></i></a>
                                                                 <a class="text-danger  delete-btn" title="delete" data-id="{{$item->id}}" data-toggle="modal" data-target=".delete-modal" href="#"><i class="ti ti-trash"></i></a>
                                                             </td>

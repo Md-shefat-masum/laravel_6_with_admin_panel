@@ -45,7 +45,7 @@ class AjaxController extends Controller
 
         // $id = AjaxCrud::orderBy('id','DESC')->limit(1)->get();
         // foreach($id as $id)$id= $id->id;
-        // return response()->json(array('sucess'=>true,'banner' => $id));
+        return response()->json(array('sucess'=>true,'banner' => $id));
 
     }
 

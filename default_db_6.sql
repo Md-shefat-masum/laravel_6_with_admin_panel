@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2019 at 05:24 PM
+-- Generation Time: Oct 28, 2019 at 05:29 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -43,16 +43,14 @@ CREATE TABLE `ajax_cruds` (
 --
 
 INSERT INTO `ajax_cruds` (`id`, `title`, `sub_title`, `image`, `status`, `created_at`, `updated_at`) VALUES
-(81, 'shefat masum asdf', 'shefat masumadsf', 'uploads/ajaxCrud/image/FM5anSjNStDStDp9SmOXxfkUMGyiokMdOwRivLP5.jpeg', 1, '2019-10-27 01:33:16', '2019-10-27 07:33:09'),
-(82, 'habi', 'sub title 2', 'uploads/ajaxCrud/image/X9ZxibcxEFgspoEOKm3t0zmlRB4QX74NSh1POhWR.jpeg', 0, '2019-10-27 01:35:33', '2019-10-27 07:57:47'),
-(83, 'Deputy manager2', 'sub title2', 'uploads/ajaxCrud/image/OPtV3a5Vspkbb7xKNsBPRRjsJ6vAuHCqrDqT7Tqt.jpeg', 0, '2019-10-27 04:56:44', '2019-10-27 06:48:10'),
-(84, 'new', 'newsadfasdfdsafe ewfasdf', 'uploads/ajaxCrud/image/fj3LDvPGQnKrTRjOFBybXCo7TDsK1VQVvZqKaZiH.jpeg', 0, '2019-10-27 06:48:26', '2019-10-27 07:57:42'),
-(85, 'new  85', 'new 85', 'uploads/ajaxCrud/image/YqXlvXmU4IaPfmHuvwoxSQCfsKovjRKHhbfF1yg5.jpeg', 0, '2019-10-27 07:03:44', '2019-10-27 07:57:38'),
-(86, 'shefat ullah', 'masum', 'uploads/ajaxCrud/image/7lovpf8cXwe9SBHuuTEPedMfBttDeDs6CDcRS5nj.jpeg', 0, '2019-10-27 07:05:10', '2019-10-27 07:57:34'),
-(87, 'masum', 'masum', 'uploads/ajaxCrud/image/YXxUms0lWZhZGxsG0ybVnhhFU9fAGVZSUGFewtDF.jpeg', 0, '2019-10-27 07:05:43', '2019-10-27 07:57:30'),
-(88, 'logo2', 'sub title', 'uploads/ajaxCrud/image/pQVAL6dZeJCyfpXnBoQPI1XBYMke9wIW59igq940.jpeg', 0, '2019-10-27 07:06:42', '2019-10-27 07:57:26'),
-(89, 'logo2', 'sub title', 'uploads/ajaxCrud/image/fpKjmrvXvGBsqIFrL1woMSujezNu9ScozYkERyCH.jpeg', 0, '2019-10-27 07:08:58', '2019-10-27 07:57:21'),
-(90, 'logo2', 'shefat', 'uploads/ajaxCrud/image/kSyHEKoWVVuklpKJbGsvDx3ccWWwATaiitHibigY.jpeg', 1, '2019-10-27 07:58:37', '2019-10-27 07:58:37');
+(98, 'logo edit', 'sub title', 'uploads/ajaxCrud/image/UGHecLAHZtaochnPxnnru0yDRxh7FktweOUS6eCt.jpeg', 1, '2019-10-27 13:21:35', '2019-10-27 15:04:12'),
+(99, 'logo edit', 'sub title', 'uploads/ajaxCrud/image/JtTTWEMiCcfo6jJ3q8RgQgRSy8wzxXrmxOmhXmAv.jpeg', 0, '2019-10-27 13:32:06', '2019-10-27 14:29:28'),
+(100, 'shefat', 'shefat', 'uploads/ajaxCrud/image/wK3aW691obYQv0RqgeWbriNL5M7jJzVvFt8WtA2N.jpeg', 0, '2019-10-27 13:33:49', '2019-10-27 14:28:03'),
+(101, 'logo edit', 'sub title', 'uploads/ajaxCrud/image/lRWAlk8lJqQbXVjR5POZvIj93BXPRCtvMGKK2RZk.jpeg', 0, '2019-10-27 13:36:40', '2019-10-27 14:26:36'),
+(102, 'logo2', 'sub title', NULL, 0, '2019-10-27 13:40:30', '2019-10-27 14:26:09'),
+(103, 'logo edit', 'sub title', 'uploads/ajaxCrud/image/PdUTQ7C8N7L1ttKLLYdwm6jPyf9BPwmShLrHvx1r.jpeg', 0, '2019-10-27 13:44:25', '2019-10-27 14:28:29'),
+(104, 'shefat222', 'sub title222', 'uploads/ajaxCrud/image/hBk5fSzinn0IPNCyn4FC9r79Z9nx2ft4yba9EnGU.jpeg', 1, '2019-10-27 14:30:00', '2019-10-27 15:15:01'),
+(105, 'this is creative shaper', 'batch 1904', 'uploads/ajaxCrud/image/eE4lzqRA0LofyHHNMcQvCh8CI4uzGp22dtpFpy39.jpeg', 1, '2019-10-27 14:32:32', '2019-10-27 15:20:52');
 
 -- --------------------------------------------------------
 
@@ -66,12 +64,22 @@ CREATE TABLE `banners` (
   `subheading` text COLLATE utf8mb4_unicode_ci,
   `button_name` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `button_url` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `banner_img` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `slug` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'sdfdsfvdff',
   `status` int(11) NOT NULL DEFAULT '1',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `banners`
+--
+
+INSERT INTO `banners` (`id`, `heading`, `subheading`, `button_name`, `button_url`, `image`, `slug`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'heading', 'subtitle', 'read more', NULL, 'uploads/banner/sViyi6V84dXUIDZ99YE7X1WkY80WyjvqSJNJIZSL.jpeg', 'banner205db60c5c537c8', 1, '2019-10-27 15:30:04', '2019-10-27 15:30:04'),
+(2, 'adopt child', 'dfasdasdf', 'asdf', 'adsfasdf', 'uploads/banner/0TpC4mUaw7P1UXzm4FDzeCcnPMcE4clIJePH9tXX.jpeg', 'banner205db60cd629722', 1, '2019-10-27 15:32:06', '2019-10-27 15:32:06'),
+(3, 'adopt child', 'a page when lookinorem', 'adf', 'adsfasd', NULL, 'banner205db60e6b56487', 1, '2019-10-27 15:38:51', NULL),
+(4, 'adopt child', 'asdfasdf', 'adsfasdf', 'asdfasdf', 'uploads/banner/Dn8xgIAmkzpCATVoUCwTAw3f0Qbf89mOWyLr9Yt0.jpeg', 'banner205db60ea20cf77', 1, '2019-10-27 15:39:46', '2019-10-27 15:39:46');
 
 -- --------------------------------------------------------
 
@@ -284,13 +292,13 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT for table `ajax_cruds`
 --
 ALTER TABLE `ajax_cruds`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT for table `banners`
 --
 ALTER TABLE `banners`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `contact_messages`
