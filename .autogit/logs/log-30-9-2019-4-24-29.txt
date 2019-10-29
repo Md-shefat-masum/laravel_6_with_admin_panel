@@ -1,0 +1,39 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 30 2019 04:24:29 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AjaxController.php
+* public/contents/admin/js/ajaxCrud.js
+* resources/views/admin/ajax/ajax.blade.php
+
+
+Created files:
+* .autogit/logs/log-30-9-2019-3-54-22.txt
+* public/uploads/ajaxCrud/image/1EsBTrolTAGOLd05gX5lDzHIsuupo7m4DBO8l0KM.jpeg
+* public/uploads/ajaxCrud/image/2JFelcQ6vKLqZ78jAjvzZKFD7jopSgDuGyceJ5tq.jpeg
+* public/uploads/ajaxCrud/image/3L1oY5mbNDRf08h6YSU4TVuqvd8d4MTvwUZRyB6f.jpeg
+* public/uploads/ajaxCrud/image/3bIYJRSmuW8v2E4Ceh7Q5ehBcpsztj9ad1K4YV3m.jpeg
+* public/uploads/ajaxCrud/image/4f8IBMvkvsjTUPF4DmjM9tcZc7K1A7FkHkaBvM56.jpeg
+* public/uploads/ajaxCrud/image/LG75RCXVhvf7HP2FVBoMTdIvxdJ8BML64IsKpv7h.jpeg
+* public/uploads/ajaxCrud/image/OqPatbWwHMQuvYIrFEwk44diNMgKtI0WpcBtcsFR.jpeg
+* public/uploads/ajaxCrud/image/SJoHSGG8aYpJ3WCjDhqx7UdgQgkXZSmOYkHm6JU9.jpeg
+* public/uploads/ajaxCrud/image/XUi2v86WjPsdLwHnSndrFyI8JbkiOZQSTWAjgpv0.jpeg
+* public/uploads/ajaxCrud/image/YPy1Rpwg2LmmUUwUtO2QnaDNFR9bavkbhkIYm1d5.jpeg
+* public/uploads/ajaxCrud/image/ectWMlhf68HHH2EXyZsRSsQGLwPKkhE7oRKiA0aQ.jpeg
+* public/uploads/ajaxCrud/image/ekImDbMxwWlbuCfOlPx84vMTPLCwSXMolO7icOdY.jpeg
+* public/uploads/ajaxCrud/image/hsIXvcXivpjblXQHMN3tCSUA717rAc7OGcVmmMrr.jpeg
+* public/uploads/ajaxCrud/image/kquoHLUIPDrTXLyZywlryCt7ZdAJSZwNmf3CfdmP.jpeg
+* public/uploads/ajaxCrud/image/locrF0cGuZCGNIG8hhoJnbXn2rqqqpmdLxTUhxQK.jpeg
+* public/uploads/ajaxCrud/image/lwBaWkyLhWiIlEDxyrLYLpro0Hv3kuDDpPwaIIUy.jpeg
+* public/uploads/ajaxCrud/image/sSN8JZMcHZfz87rcqDRyxmnlGYarKjWW8SyXBND6.jpeg
+* public/uploads/ajaxCrud/image/uAioEMAhgduRULO2eCGzHMbAGdVjfIM6G8Wy7S4l.jpeg
+* public/uploads/ajaxCrud/image/uhKyasm9ezd7hfeXmUn4GZSarQVSskYZfWpaNzjI.jpeg
+* public/uploads/ajaxCrud/image/wzgYqB3xVQHMFoL1Zo0n5Qwmb8kHnlCiItZlXQJS.jpeg
+* public/uploads/ajaxCrud/image/xJdeMaMAWqnJmrkRdcjAwDAsw0hUgzWaS5tbhNfT.jpeg
+
+
+Deleted files:
+
+
+Renamed files:
