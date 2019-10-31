@@ -50,7 +50,10 @@ class AjaxController extends Controller
 
     public function view($id){
         $banner = AjaxCrud::where('id',$id)->firstOrFail();
-        return response()->json(array('sucess'=>true,'banner' => $banner));
+
+        $row = '<a class="text-success ml-1 view-btn" data-server="{{url("' . '")}}" data-view_url="/admin/ajax/view/" data-action="{{route("'.'"ajax_index_view",'.$banner->id.')}}" data-method="GET" data-id="{{'.$banner->id.'}}" data-toggle="modal" data-target=".view-modal" title="view" href="#"><i class="ti ti-zoom-in"></i></a>';
+
+        return response()->json(array('sucess'=>true,'banner' => $banner,'row' => $row));
     }
 
     public function update(Request $request){

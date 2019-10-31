@@ -94,6 +94,8 @@ $(document).ready(function () {
             processData: false,
             success: function (data) {
                 console.log(data.banner);
+                console.log(data.row);
+                $('#table tr:last').after(data.row);
                 $('#view-result tr').remove();
                 jQuery.each(data.banner, function (colname, coldata) {
                     $('#view-result').append('<tr> <td style="width:35%">' + colname + '</td> <td style="width:4px;text-align:center">:</td> <td style="width:60%">' + coldata + '</td> </tr>')

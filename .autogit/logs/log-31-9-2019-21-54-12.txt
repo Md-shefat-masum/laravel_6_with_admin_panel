@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 31 2019 21:54:12 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* public/uploads/ajaxCrud/image/DpNqm7mPjrzvqapdy7ymX4jS5iwXqP8zrxKuRzZo.jpeg
+* public/uploads/ajaxCrud/image/MjCGrkKBS0c5DA8OrEFeBsB2sflduXIEOcso0TVt.png
+* public/uploads/ajaxCrud/image/NaGoisn5SZ4IhOJBUnQqWpC9n3PvGce5lQubtoSO.jpeg
+* public/uploads/ajaxCrud/image/OGMJ31EyWvzbezbhkIAbyoqxriBt3weKjpT7fig6.jpeg
+* public/uploads/ajaxCrud/image/r8OD7H8ELr6QiyEuDQZQjXxwJH3ThARI9IaiMFVN.jpeg
+
+
+Deleted files:
+
+
+Renamed files:

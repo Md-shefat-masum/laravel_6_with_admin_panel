@@ -111,9 +111,9 @@
                                                 <tbody>
                                                     @foreach ($all as $item)
                                                         <tr id="del_row{{$item->id}}">
-                                                            <td class="{{$item->id}}" id="title{{$item->id}}">{{$item->title}}</td>
-                                                            <td class="{{$item->id}}" id="sub_title{{$item->id}}">{{$item->sub_title}}</td>
-                                                            <td class="{{$item->id}}" id="status{{$item->id}}">{{$item->status}}</td>
+                                                            <td id="title{{$item->id}}">{{$item->title}}</td>
+                                                            <td id="sub_title{{$item->id}}">{{$item->sub_title}}</td>
+                                                            <td id="status{{$item->id}}">{{$item->status}}</td>
                                                             <td>
                                                                 @if ($item->image != '')
                                                                     <img class="table_image_40" style="height:40px" src="{{asset('').$item->image}}" alt=""/>
